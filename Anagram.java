@@ -31,6 +31,9 @@ public class Anagram {
 		 String s1 = preProcess(str1);
          String s2 = preProcess(str2);
 
+		 s1 = s1.replace(" ", "");
+   		 s2 = s2.replace(" ", "");
+
         if (s1.length() != s2.length()) {
 		return false; }
 
